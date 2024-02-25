@@ -1,0 +1,189 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contactez Protualis pour toute question, commentaire ou collaboration. Remplissez le formulaire de contact pour nous envoyer un message. Nous sommes là pour répondre à vos préoccupations.">
+        <title>Protualis - Contact</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/HankenGrotesk.ttf">
+    </head>
+
+    <body class="font-sans bg-gray-100">
+        <!-- Header -->
+        <header class="sticky top-0 z-10">
+            <!-- Sticky Navbar -->
+            <nav class="bg-green-800 shadow-md p-4">
+                <div class="container mx-auto flex items-center justify-between">
+                    <a href="index.html" aria-label="Accueil"><img src="assets/img/logo-protualis.webp" alt="Logo Protualis"></a>
+                    <!-- Navbar Links for Desktop -->
+                    <div class="hidden md:flex items-center space-x-4 nav-links">
+                        <a href="media.html" class="text-white">Médias</a>
+                        <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+                    </div>
+                    <!-- Hamburger Toggle for Mobile -->
+                    <button class="md:hidden text-white nav-toggle" aria-label="Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>                    
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        
+            <!-- Mobile Menu -->
+            <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden opacity-80 grid grid-rows-2 text-center">
+                <a href="media.html" class="text-white p-2">Médias</a>
+                <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+            </div>
+        </header>
+        <!-- End Header -->
+            
+        <!-- Main -->
+        <main class="marg-force">
+            <!-- Form section -->
+            <div class="container mx-auto p-4">
+                <h2 class="text-2xl font-bold text-coral-400 mb-6">Nous Contacter</h2>
+                <form action="contact.php" method="post">
+                     <div class="grid grid-cols-2 gap-4">
+                        <div class="mb-4 relative flex items-center justify-center transition-all transform">
+                            <label for="nom" class="block text-sm font-medium absolute force-margin-left text-green-800" id="nom-label">
+                                Nom <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('nom', 'nom-label')"
+                                onblur="handleInputBlur('nom', 'nom-label')"
+                            >
+                        </div>
+                        <div class="mb-4 relative flex items-center justify-center transition-all transform">
+                            <label for="prenom" class="block text-sm font-medium absolute force-margin-left text-green-800" id="prenom-label">
+                                Prénom <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('prenom', 'prenom-label')"
+                                onblur="handleInputBlur('prenom', 'prenom-label')"
+                            >
+                        </div>
+                        <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
+                            <label for="email" class="block text-sm font-medium absolute force-margin-left text-green-800" id="email-label">
+                                Adresse mail <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('email', 'email-label')"
+                                onblur="handleInputBlur('email', 'email-label')"
+                            >
+                        </div>
+                        <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
+                            <label for="subject" class="block text-sm font-medium absolute force-margin-left text-green-800" id="subject-label">
+                                Sujet <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('subject', 'subject-label')"
+                                onblur="handleInputBlur('subject', 'subject-label')"
+                            >
+                                <option class="bg-white text-sm font-medium text-green-800" value="" disabled selected></option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="Collaboration et Projets">Collaboration et Projets</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="Événements et Sensibilisation">Événements et Sensibilisation</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="Feedback et Témoignages">Feedback et Témoignages</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="Autres">Autres</option>
+                            </select>
+                        </div>
+                
+                        <div class="mb-4 col-span-2 relative flex  transition-all transform">
+                            <label for="message" class="block text-sm font-medium absolute force-margin-left mt-3 text-green-800" id="message-label">
+                                Écrivez votre message ... 
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('message', 'message-label')"
+                                onblur="handleInputBlur('message', 'message-label')"
+                            ></textarea>
+                        </div>
+                        <div class="col-span-2">
+                            <button type="submit" class="bg-blue-200 p-2 rounded-md text-green-800 font-medium">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- End Form Section -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Footer -->
+        <footer class="grid grid-rows-2 bg-green-800 text-white p-8">
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between mb-8">
+                <div>
+                    <!-- Logo -->
+                    <a href="https://marianne002.github.io/protualis/">
+                        <img src="assets/img/logo-protualis.webp" alt="Logo Protualis" class="h-16">
+                    </a>
+                </div>
+                <div>
+                    <ul class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                        <li class="lg:space-x-4">
+                            <a href="media.html" class="hover:text-gray-400 p-2">Médias</a>
+                        </li>
+                        <li class="lg:space-x-4">
+                            <a href="contact.html" class="hover:text-gray-400 p-2">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between">
+                <div>
+                    <p>@Protualis, inc 2023 copyright DC Paris</p>
+                </div>
+                <div>
+                    <a href="mentions-legales.html">Mentions légales</a>
+                </div>
+                <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                    <span>Suivez-nous : </span>
+                    <div class="flex items-center">
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-linkedin.webp" alt="Logo Linkedin" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-x.webp" alt="Logo X" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-instagram.webp" alt="Logo Instagram" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-youtube.webp" alt="Logo YouTube" class="h-11">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Script -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,337 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="google-site-verification" content="YOl7lRMrwzmh_o_CptGf1qEYiTRhjfJJntogtjeT6Kw" >
+        <meta name="description" content="Protualis - Protégez les droits d'auteur face à l'IA. Découvrez notre mission pour soutenir la créativité, l'éthique et la protection de l'innovation." >
+        <title>Protualis</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/HankenGrotesk.ttf">
+    </head>
+
+    <body class="font-sans bg-gray-100">
+        <!-- Header -->
+        <header class="sticky top-0 z-10">
+            <!-- Sticky Navbar -->
+            <nav class="bg-green-800 shadow-md p-4">
+                <div class="container mx-auto flex items-center justify-between">
+                    <a href="index.html" aria-label="Accueil"><img src="assets/img/logo-protualis.webp" alt="Logo Protualis"></a>
+                    <!-- Navbar Links for Desktop -->
+                    <div class="hidden md:flex items-center space-x-4 nav-links">
+                        <a href="media.html" class="text-white">Médias</a>
+                        <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+                    </div>
+                    <!-- Hamburger Toggle for Mobile -->
+                    <button class="md:hidden text-white nav-toggle" aria-label="Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>                    
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        
+            <!-- Mobile Menu -->
+            <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden opacity-80 grid grid-rows-2 text-center ">
+                <a href="media.html" class="text-white p-2">Médias</a>
+                <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+            </div>
+        </header>
+        <!-- End Header -->
+            
+        <!-- Main -->
+        <main class="grid grid-rows-7">
+            <!-- Video Section -->
+            <section class="relative w-full h-screen pb-8 justify-center">
+                <!-- Video Embed -->
+                <div id="ytplayer" class=" top-0 left-0 w-full h-full"></div>
+            </section>
+            
+            <div class="p-5"></div>
+
+            <!-- Qui somme nous ? Section -->
+            <section id="qui-sommes-nous" class="p-8 text-center marg-force bg-blue-200 rounded-lg">
+                <h2 class="text-3xl font-bold text-coral-400 mb-8">Qui sommes-nous ?</h2>
+                <p class="text-gray-700 font-semi-bold">
+                    Une équipe luttant pour la protection des droits d’auteur face à l’IA.
+                    <br> Nous souhaitons la protection de l’innovation authentique, soutenir la créativité, préserver l'Intégrité Artistique, l’innovation responsable et la sensibilisation collective.
+                    <br> Construisons ensemble un futur créatif et éthique !
+                </p>
+            </section>
+            <!-- End Qui somme nous ? Section -->
+
+            <!-- Objectifs Section -->
+            <section class="py-8 text-center marg-force">
+                <h2 class="text-3xl font-bold text-green-800 mb-8">Nos Objectifs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Objectif 1 -->
+                    <div class="p-4 bg-gray-200 flex flex-col items-center">
+                        <figure>
+                            <img src="assets/img/obj1.webp" alt="Photo d'un homme sur un ordinateur, un IA regarde par dessus son épaule et le tient par l'épaule" class="mb-4 rounded-lg">
+                            <figcaption>
+                                Photo d'un homme sur un ordinateur, un IA regarde par dessus son épaule et le tient par l'épaule.
+                            </figcaption>
+                        </figure>
+                        <h3 class="text-xl font-semibold mb-4 text-coral-400">Sensibilisation & Éthique</h3>
+                        <p>Stimuler les débats autour des normes éthiques, de la responsabilité et de la conception équitable des systèmes d'IA.</p>
+                    </div>
+                    
+                    <!-- Objectif 2 -->
+                    <div class="p-4 bg-gray-200 flex flex-col items-center">
+                        <figure>
+                            <img src="assets/img/obj2.webp" alt="Photo d'une personne tenant un pinceau contre une toile, elle est entrain de peindre" class="mb-4 rounded-lg">
+                            <figcaption>
+                                Photo d'une personne tenant un pinceau contre une toile, elle est entrain de peindre.
+                            </figcaption>
+                        </figure>
+                        
+                        <h3 class="text-xl font-semibold mb-4 text-coral-400">Créativité & Innovation Sociétale</h3>
+                        <p>Revendiquer la protection de la propriété intellectuelle comme moteur de contenus originaux et de progrès.</p>
+                    </div>
+    
+                    <!-- Objectif 3 -->
+                    <div class="p-4 bg-gray-200 flex flex-col items-center">
+                        <figure>
+                            <img src="assets/img/obj3.webp" alt="Photo d'une poignée de main entre un homme et un bras mécanique représentant les IA" class="mb-4 rounded-lg">
+                            <figcaption>
+                                Photo d'une poignée de main entre un homme et un bras mécanique représentant les IA.
+                            </figcaption>
+                        </figure>
+                        
+                        <h3 class="text-xl font-semibold mb-4 text-coral-400">Éducation sur la Propriété Intellectuelle</h3>
+                        <p>Fournir des ressources éducatives pour approfondir la compréhension chez les utilisateurs, les développeurs et les créateurs.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Objectifs Section -->
+            
+            <!--Banner Section-->
+            <section class="bg-green-800 text-white p-8 text-center rounded-lg marg-force ">
+                <h2 class="text-3xl font-bold mb-4">
+                    Respectons les droits d'auteurs,
+                    <br> protégeons les créations originales
+                </h2>
+            </section>
+            <!--End Banner Section-->
+
+            <!-- Info Section -->
+            <section class="grid grid-cols-1 md:grid-cols-2 py-8 marg-force">
+                <div class="items-center">
+                    <figure>
+                        <img src="assets/img/droit-auteur.webp" alt="Une photo d'un robot tenant précieusement une peinture, il se tient dans un musée" class="rounded-lg">
+                        <figcaption>Une photo d'un robot tenant précieusement une peinture, il se tient dans un musée.</figcaption>
+                    </figure>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-coral-400 mb-8">Qui détient les droits d'auteur sur une œuvre générée par l'IA ?</h2>
+                    <p class="text-gray-700">
+                        Est-ce le concepteur de l'algorithme, l'entreprise qui l'utilise, ou l'IA elle-même ? Peut-on considérer l’IA comme un artiste unique à lui-même, ou peut-on dire que celui-ci est le concurrent direct de l’Homme lui-même ?
+                    </p>
+                </div>   
+            </section>
+            <!-- End Info Section -->
+
+            <!-- FAQ Section -->
+            <section class="py-8 marg-force">
+                <h2 class="text-3xl font-bold text-green-800 mb-8">FAQ</h2>
+                <!-- Accordion Item 1 -->
+                <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
+                    <h2 class="mb-0" id="headingOne">
+                        <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800" 
+                            type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Comment Protualis protège les droits d’auteurs des artistes ?
+                            <span class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    
+                    <div id="collapseOne" class="!visible bg-white rounded-b-lg" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingOne" data-te-parent="#accordion">
+                        <div class="px-5 py-4">
+                            ProTualis , protège les droits d’auteurs des artistes. En garantissant, la protection contre les fraudes et les plagiats. En bannissant, toutes les personnes ne respectant pas les conditions d’utilisation au profit de l’application. Ce dispositif, s’assurera également de votre protection personnelle au profit de la bonne gestion de vos données personnelles.
+                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion Item 1 -->
+            
+                <!-- Accordion Item 2 -->
+                <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
+                    <h2 class="mb-0" id="headingTwo">
+                        <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800"
+                            type="button" data-te-collapse-init data-te-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
+                            Comment vérifier si mes œuvres sont dans les bases de données de l'IA ?
+                            <span
+                                class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="!visible hidden bg-white rounded-b-lg bg-white rounded-b-lg" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingTwo" data-te-parent="#accordion">
+                        <div class="px-5 py-4">
+                            Pour vérifier la présence de tes œuvres dans les bases de données de l'IA, recherche en ligne via des moteurs spécialisés. Consulte l'Internet Archive, le Projet Gutenberg (pour les livres) ou Open Images (pour les images). Contacte directement les projets ou organisations d'IA liés à tes œuvres.
+                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion Item 2 -->
+
+                <!-- Accordion Item 3 -->
+                <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
+                    <h2 class="mb-0" id="headingThree">
+                        <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800"
+                            type="button" data-te-collapse-init data-te-target="#collapseThree" aria-expanded="true"
+                            aria-controls="collapseThree">
+                            L’IA peut-il nous aider sur des oeuvres sans nous les voler ?
+                            <span
+                                class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="!visible hidden bg-white rounded-b-lg" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingThree" data-te-parent="#accordion">
+                        <div class="px-5 py-4">
+                            Oui, l'IA peut être utilisée pour aider dans la création artistique sans violer les droits d'auteur. Des outils d'IA peuvent fournir des suggestions, des inspirations et des conseils tout en respectant la propriété intellectuelle. Il est essentiel de choisir des plateformes et des services qui valorisent le respect des droits d'auteur et de comprendre les conditions d'utilisation avant d'employer des outils d'IA dans le processus créatif.                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion Item 3 -->
+            
+                <!-- Accordion Item 4 -->
+                <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
+                    <h2 class="mb-0" id="headingFour">
+                        <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800"
+                            type="button" data-te-collapse-init data-te-target="#collapseFour" aria-expanded="true"
+                            aria-controls="collapseFour">
+                            Comment voir si une oeuvres a été généré par l’IA ?
+                            <span
+                                class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="!visible hidden bg-white rounded-b-lg" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingFour" data-te-parent="#accordion">
+                        <div class="px-5 py-4">
+                            Déterminer visuellement si une œuvre a été générée par l'IA peut être complexe. Certains signes incluent une esthétique ou une complexité inhabituelle. Vérifiez les métadonnées, les crédits et recherchez des informations sur les outils d'IA utilisés. En cas d'incertitude, contactez l'auteur ou la plateforme pour obtenir des clarifications.
+                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion Item 4 -->
+
+                <!-- Accordion Item 5 -->
+                <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
+                    <h2 class="mb-0" id="headingFive">
+                        <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800"
+                            type="button" data-te-collapse-init data-te-target="#collapseFive" aria-expanded="true"
+                            aria-controls="collapseFive">
+                            L’IA est-il un risque pour les artistes ?
+                            <span
+                                class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="!visible hidden bg-white rounded-b-lg" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingFive" data-te-parent="#accordion">
+                        <div class="px-5 py-4">
+                            Bien que l'IA puisse être un outil stimulant pour les artistes, elle soulève des inquiétudes liées à l'automatisation et à la reproduction facile des œuvres. Les artistes peuvent exploiter l'IA tout en préservant leur originalité, en restant attentifs aux enjeux. Une compréhension approfondie des implications et une adaptation aux évolutions technologiques peuvent contribuer à atténuer les risques potentiels.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End FAQ Section -->
+
+            <!-- Newsletter Section -->
+            <section class="my-10 p-8 bg-gray-300 grid">
+                <h2 class="text-2xl font-semibold mb-4 text-green-800">Vous souhaitez en savoir plus</h2>
+                <p class="text-center mb-6 text-green-800">Inscrivez-vous dès maintenant à notre Newsletter gratuite.</p>
+                <!-- Newsletter Form -->
+                <div class="flex items-center justify-center mx-auto">
+                    <form action="#" method="POST" class="w-full max-w- bg-grey border border-green-500">
+                        <div class="flex items-center">
+                            <input type="email" name="email" placeholder="Votre adresse mail" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 p-4 leading-tight focus:outline-none">
+                            <button type="submit" class="bg-green-800 text-white rounded-r-md focus:outline-none p-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- End Newsletter Section -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Footer -->
+        <footer class="grid grid-rows-2 bg-green-800 text-white p-8">
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between mb-8">
+                <div>
+                    <!-- Logo -->
+                    <a href="https://marianne002.github.io/protualis/">
+                        <img src="assets/img/logo-protualis.webp" alt="Logo Protualis" class="h-16">
+                    </a>
+                </div>
+                <div>
+                    <ul class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                        <li class="lg:space-x-4">
+                            <a href="media.html" class="hover:text-gray-400 p-2">Médias</a>
+                        </li>
+                        <li class="lg:space-x-4">
+                            <a href="contact.html" class="hover:text-gray-400 p-2">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between">
+                <div>
+                    <p>@Protualis, inc 2023 copyright DC Paris</p>
+                </div>
+                <div>
+                    <a href="mentions-legales.html">Mentions légales</a>
+                </div>
+                <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                    <span>Suivez-nous : </span>
+                    <div class="flex items-center">
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-linkedin.webp" alt="Logo Linkedin" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-x.webp" alt="Logo X" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-instagram.webp" alt="Logo Instagram" class="h-11">
+                        </a>
+                        <a href="#" class="p-2">
+                            <img src="assets/img/logo-youtube.webp" alt="Logo YouTube" class="h-11">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Script -->
+        <script src="assets/js/script.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </body>
+</html>
